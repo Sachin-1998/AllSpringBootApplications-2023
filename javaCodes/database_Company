@@ -1,0 +1,43 @@
+create database Company;
+
+create table employes(
+eid int,
+eName varchar(15),
+Phone_num varchar(15),
+Salary float,
+Date_of_birth date,
+Date_of_joining date,
+Email_id varchar(20),
+Street_name varchar(15),
+City_name varchar(15),
+Pin_code varchar(10),
+Gender varchar(1)
+);
+
+
+insert into employes(eid ,eName ,Phone_num ,Salary ,Date_of_birth,Date_of_joining ,Email_id ,Street_name ,City_name ,Pin_code ,Gender )
+values 
+(3,"Ajay","247642525","59000","1997-8-20","2022-2-15","ajay@gmail.com","Maval Road","Sindhdurg","456023","M"),
+(4,"prachi","243153626","66000","2000-5-5","2022-1-12","prachi@gmail.com","SP Road","nashik","411255","F"),
+(5,"Akansha","59316542","53000","1999-4-7","2022-2-08","akansha@gmail.com","ABC Road","Delhi","416057","F"),
+(6,"pavan","56321990","60000","1996-9-23","2022-3-15","pavan@gmail.com","Navale Road","latur","524056","M");
+
+
+
+
+create table Project(
+pid int,
+Project_Started_date date,
+Project_name varchar(20)
+);
+
+
+
+
+insert into Project(pid, Project_Started_date,Project_name )
+values 
+(1,"2022-6-15","IDeas"),
+(2,"2020-5-27","Vodafone"),
+(3,"2021-4-09","Jio"),
+(4,"2022-3-10","Airtel"),
+(5,"2022-2-25","tata-docomo");
